@@ -15,7 +15,7 @@ public class Test {
 		System.out.println(user.getUserName());
 		System.out.println(user.getPassword());
 		session.close();//first level close
-		sf.close();//slc close
+		
 
 		//session.close();
 		SessionFactory sf1=new Configuration().configure().buildSessionFactory();
@@ -28,6 +28,7 @@ public class Test {
 
 
 		session1.close();
+		sf.close();//slc close
 
 			}
 
